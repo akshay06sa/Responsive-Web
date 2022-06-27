@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" contet="width=device-width">
+    <meta name="decription" contet="Affordable and profetional web design">
+    <meta name="keywords" contet="web design,Affordable web design ">
+    <meta name="auther" contet="Akshay">
+    <title>Welcome | Responsive Website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Responsive</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="employee.html">Employee</a></li>
+            <li class="current"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="boxs">
+
+        <div class="heading">
+          <h4 class="title">Frequently Asked Questions</h4>
+        </div>
+
+        <div class="faq">
+          <div class="content">
+            <div class="question">
+              <h3>
+                What is web development?
+              </h3>
+            </div>
+            <div class="answer">
+              <p>
+                Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="question">
+              <h3>
+                What is HTML?
+              </h3>
+            </div>
+            <div class="answer">
+              <p>
+                HTML stands for Hyper Text Markup Language. HTML is the standard markup language for Web pages. HTML elements are the building blocks of HTML pages.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="question">
+              <h3>
+                What is CSS?
+              </h3>
+            </div>
+            <div class="answer">
+              <p>
+                Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="question">
+              <h3>
+                What is JavaScript?
+              </h3>
+            </div>
+            <div class="answer">
+              <p>
+              JavaScript is the world most popular lightweight, interpreted compiled programming language. It is also known as scripting language for web pages. It is well-known for the development of web pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <footer>
+      <p>Responsive Website, Copyright &copy;2022</p>
+    </footer>
+    <script>
+      const faq = document.getElementsByClassName('content');
+
+      for(i=0; i<faq.length; i++)
+      {
+        faq[i].addEventListener('click', function()
+        {
+          this.classList.toggle('active')
+        })
+      }
+    </script>
+  </body>
+
+</html>

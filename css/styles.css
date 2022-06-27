@@ -1,0 +1,434 @@
+body
+{
+  font: 15px/1.5 Arial, Helvetica , sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/*Global*/
+
+.container
+{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+ul
+{
+  padding: 0;
+  margin: 0;
+}
+.button_1
+{
+  height: 38px;
+  color: #fff;
+  background: #e8491d;
+  padding: 0 20px 0 20px;
+  border: 1px #fff solid;
+}
+
+.dark
+{
+  padding: 15%;
+  color: #fff;
+  background: #35424a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Employee */
+*{
+  box-sizing: border-box;
+}
+
+.contains
+{
+  margin-top:15px;
+  margin-left: 40%;
+  background-color: #f8f9fd;
+  display: flex;
+  flex-direction: column;
+  height:70vh;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 350px;
+}
+.title
+{
+  margin: 0;
+}
+.subtitle
+{
+  display: inline-block;
+  margin:5px 0 10px;
+  opacity: 0.8;
+}
+.heading
+{
+  background-color: #e8491d;
+  color: #fff;
+  padding: 30px 20px;
+}
+.heading input
+{
+  background-color: rgba(0,0,0,0.3);
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+.heading input:focus
+{
+  outline: none;
+}
+.user-list
+{
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.user-list li
+{
+  display: flex;
+  padding: 20px;
+}
+.user-list img
+{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+
+}
+.user-list .user-info
+{
+  margin-left: 10px;
+}
+.user-list .user-info h4
+{
+  margin: 0 0 10px;
+}
+.user-list .user-info p
+{
+  font-size: 12px;
+}
+.user-list li:not(:last-of-type)
+{
+  border-bottom: 1px solid #eee;
+}
+.user-list li.hide
+{
+  display: none;
+}
+/* FAQ */
+
+.boxs
+{
+  margin-top:15px;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: #f8f9fd;
+  display: flex;
+  flex-direction: column;
+  height:inherit;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 500px;
+}
+.heading
+{
+  text-align: center;
+}
+.faq .content
+{
+  position:relative;
+  margin: 10px 20px;
+}
+.faq .content .question
+{
+  position: relative;
+  padding:1px 20px;
+  background: #35424a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.faq .content .question::before
+{
+  content: '+';
+  position:absolute;
+  top:25%;
+  right:20px;
+  transform: translate(-50%);
+  font-size: 1.5em;
+}
+.faq .content.active .question::before
+{
+  content:'-';
+}
+.faq .content .answer
+{
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow: auto ;
+}
+.faq .content.active .answer
+{
+  height:135px;
+  padding: 5px;
+}
+/*Hedder*/
+
+header
+{
+  background: #35424a;
+  color: #fff;
+  padding: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+
+}
+
+header a
+{
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header li
+{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+ header #branding
+ {
+   float:left;
+ }
+
+header #branding h1
+{
+  margin: 0;
+}
+header nav
+{
+  float:right;
+  margin-top: 10px;
+}
+header .highlight , header .current a
+{
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover
+{
+  color: #ffa020;
+  font-weight:bold;
+}
+/* showcase*/
+#showcase
+{
+  min-height: 400px;
+  background: url(../img/showcase.png) no-repeat 0 -400px;
+  text-align: center;
+  color: #fff;
+}
+#showcase h1
+{
+  margin-top:center;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+#showcase p
+{
+  font-size: 20px;
+}
+/* Newsletter */
+#newsletter
+{
+  padding: 25px;
+  color: #fff;
+  background: #35424a;
+}
+#newsletter h1
+{
+  float: left;
+}
+#newsletter form
+{
+  float:right;
+  margin-top: 20px;
+}
+#newsletter input[type="email"]
+{
+  padding: 5px;
+  height: 37px;
+  width: 220px;
+}
+#newsletter .button_1:hover
+{
+  color: #133337;
+}
+/* Boxes */
+#boxes
+{
+  margin-top: 20px;
+}
+#boxes .box
+{
+  float: left;
+  text-align: center;
+  width:30%;
+  padding: 10px;
+}
+#boxes .box img
+{
+  width: 90px;
+}
+/* article-col */
+article#main-col
+{
+  float: left;
+  width: 60%;
+}
+/* sidebar */
+aside#sidebar
+{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+aside#sidebar .update input , aside#sidebar .update textarea
+{
+  width: 100%;
+  padding: 5px;
+}
+/* services */
+ul#services li
+{
+  padding: 20px;
+  list-style: none;
+  border: #ccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+/* footer */
+footer
+{
+  padding: 20px;
+  margin-top: 20px;
+  align-items: baseline;
+  color: #fff;
+  background: #e8491d;
+  text-align: center;
+}
+footer p:hover
+{
+  color: #133337;
+}
+/* media query */
+@media (max-width:1000px) {
+  header #branding,
+  header nav,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  section, .contains
+  {
+       float: none;
+       text-align: center;
+       width:100%;
+       font-size: 50px;
+  }
+  .user-list, section .boxs
+  {
+    margin:inherit;
+    max-height: inherit;
+  }
+  header #branding h1
+  {
+    font-size:60px;
+    width:100%;
+  }
+  header nav li a
+  {
+    padding: 0;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+  header
+  {
+    padding-bottom: 50px;
+  }
+  #showcase h1
+  {
+    margin-top: 40px;
+  }
+  #newsletter button, .update button
+  {
+    width:auto;
+  }
+  #newsletter form input[type="email"], .update input , .update textarea
+  {
+    margin-bottom: 30px;
+    width:60%;
+  }
+  aside#sidebar
+  {
+    float:none;
+    width:100%;
+    text-align:left;
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-size:55px;
+  }
+  .container p
+  {
+    text-align: left;
+  }
+
+  .contains
+  {
+    margin-left: 20px;
+    margin-right: 20px;
+    width:auto;
+  }
+  .heading input
+  {
+    width:50%;
+    height:25%;
+  }
+  .boxs
+  {
+    margin-left: auto;
+    font-size: 35px;
+    width: 100%;
+  }
+  .faq .content.active .answer
+  {
+    height:auto;
+    padding: 5px;
+  }
+  nav
+  {
+    font-size: 50px;
+  }
+
+}
